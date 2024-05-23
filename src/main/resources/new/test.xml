@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<department>
+    <room>413</room>
+    <students>
+        <student>
+            <name>Adam</name>
+            <hobbies>
+                <hobby>Football</hobby>
+                <hobby>Hockey</hobby>
+            </hobbies>
+        </student>
+        <student>
+            <name>Thomas</name>
+            <hobbies>
+                <hobby>Cooking</hobby>
+                <hobby>Football</hobby>
+            </hobbies>
+        </student>
+    </students>
+</department>
