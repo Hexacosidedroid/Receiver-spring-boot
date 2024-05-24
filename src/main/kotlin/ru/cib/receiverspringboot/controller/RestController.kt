@@ -17,19 +17,10 @@ import java.io.File
 
 @RestController
 class RestController(
-    private val jaxbConfig: JaxbConfig,
     private val studentRepository: StudentRepository,
     private val departmentRepository: DepartmentRepository,
-    private val jdbcTemplate: JdbcTemplate,
     private val departmentService: DepartmentService
 ) {
-    @GetMapping("/getDepartment")
-    fun getDepartment(): DepartmentDto {
-        val department = jaxbConfig.createUnmarshaller()
-            .unmarshal(File("/Users/slava_ivanov_saikyo/IdeaProjects/Receiver-spring-boot/src/main/resources/test.xml")) as DepartmentXml
-        return department.toDto()
-    }
-
     @GetMapping("/getCount")
     fun getCount() = studentRepository.count()
 

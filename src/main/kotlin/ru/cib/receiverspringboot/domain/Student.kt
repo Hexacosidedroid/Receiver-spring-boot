@@ -14,5 +14,6 @@ data class Student(
     var name: String? = null,
     @ManyToOne(targetEntity = Department::class)
     @JoinColumn(name = "department_id")
-    var department: Department? = null
+    var department: Department? = null,
+    var status: StudentStatuses = StudentStatuses.NEW
 )
